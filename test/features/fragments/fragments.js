@@ -29,7 +29,7 @@ var fragments = function (text)
     var mapping = {
         helloButton: element.bind(by.id('butPatryk')),
         niceToMeetYouButton: element.bind(by.id('butP')),
-        someBigText: element.bind(by.id('jumbotron.h1')),
+        someBigText: element.bind(by.css('Patryk2.h1')),
         learnMoreHref: element.bind(by.id('butP3'))
     };
 
