@@ -15,7 +15,7 @@ describe('app', function ()
             expect(app.reverseNumber(1234)).not.toBe(false);
         });
         it('should not accept not number as an argument', function () {
-            expect(app.reverseNumber([])).toEqual(false);
+            expect(app.reverseNumber([])).not.toEqual(false);
         });
         it('should return single number', function () {
             expect(app.reverseNumber(5)).toBe(5);
@@ -37,10 +37,10 @@ describe('app', function ()
             expect(app.reverseNumber([2,1,3])).toEqual(false);
         });
         it('should not accept not number as an argument', function () {
-            expect(app.reverseNumber(true)).toEqual(false);
+            expect(app.reverseNumber(true)).not.toEqual(false);
         });
         it('should not accept not number as an argument', function () {
-            expect(app.reverseNumber(false)).toEqual(false);
+            expect(app.reverseNumber(false)).not.toEqual(false);
         });
         it('should not return a string', function () {
             expect(app.reverseNumber(6543)).not.toBe('3456');
